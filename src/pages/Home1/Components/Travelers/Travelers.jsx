@@ -75,4 +75,4 @@ const Travelers = () =>{
         </div>
     )
 }
-export default Travelers
+export default Travelers 

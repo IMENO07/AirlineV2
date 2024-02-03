@@ -14,7 +14,7 @@ const Home1Page = () => {
 
   return (
     <div>
-      <Navbar/>
+      <Navbar/> 
       <Home/>
       <Search/>
       <Support/>
