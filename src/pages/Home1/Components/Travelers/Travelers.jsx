@@ -1,4 +1,7 @@
-import React from "react"
+import React, {useEffect} from "react"
+import Aos from "aos"
+import 'aos/dist/aos.css'
+
 import paris from "../../../../assets/paris.jpg"
 import dubai from "../../../../assets/dubai.jpg"
 import london from "../../../../assets/london.jpg"
@@ -39,10 +42,15 @@ const travelers = [
 ]
 
 const Travelers = () =>{
+
+    useEffect(()=>{
+        Aos.init({duration:2000})
+    },[] )
+
     return(
         <div className="travelres container section">
             <div className="sectionContainer">
-                <h2>
+                <h2 data-aos='fade-down'  data-aos-duration='2500'>
                     Top Travelers of this Month!
                 </h2>
 
@@ -53,7 +61,7 @@ const Travelers = () =>{
                         travelers.map(({id,destinationImage,travelerPicture,travelerName,socialLink})=>{
                             return(
 
-                                <div key={id} className="singleTraveler">
+                                <div data-aos='fade-up'  data-aos-duration='2500' key={id} className="singleTraveler">
                                 <img src={destinationImage} className="destinationImage" />
 
                                 <div className="travelerDetails">

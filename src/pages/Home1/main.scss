@@ -219,6 +219,8 @@ h2{
         align-items: center;
         position: relative;
         border-radius: 5rem;
+        z-index: 500;
+        
         .videoDiv{
             width: 100%;
 
@@ -282,6 +284,7 @@ h2{
             justify-content: center;
             flex-direction: column;
             gap: 1.5rem;
+            
             
 
             .singleInput{
@@ -370,8 +373,8 @@ h2{
                     border-radius: 10rem;
                     margin-left: 20px;  
                     margin-right: 20px;
-                    height: 100%;
-                    max-height: 700px;
+                    height: 50%;
+                    max-height: 500px;
                 }
             }
         }
@@ -449,9 +452,8 @@ h2{
 
         }
         .textDiv{
-
             .grids{
-                margin-top: 1rem;
+                margin-top: 2rem;
                 gap: 1.5ren;
 
                 .singleGrid{
@@ -1022,8 +1024,94 @@ h2{
         .navBarOne, .navBarTwo{
             padding: 1.5rem 5rem;
         }
+        .navbar_with_Bg{
+            padding: 0 5rem;
+        }
+    }
+    .home{
+        .mainText{
+            width: 60%;
+            font-size: 25px;
+            line-height: 4rem;
+        }
+        .homeImages{
+            .videoDiv{
+                width: 80%;
+                height: 300px;
+
+                .video{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 15rem;
+                }
+            }
+            .plane{
+                width: 100%;
+                top: -140%;
+            }
+        }
+    }
+    .search{
+        .sectionContainer{
+            .btns{
+                width: 50%;
+            }
+        }
     }
 
+}
+@media screen and (min-width:1106px){
+    .subscribe{
+        .sectionContainer{
+            max-width: 60%;
+        }
+    }
+}
+@media screen and (min-width:1332px) {
+    .navBar{
+        .navBarTwo{
+            .menu{
+                gap: 1rem;
+
+                .listItem{
+                    padding: 0 1.5rem;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .support{
+        .sectionContainer{
+            .infoDiv{
+                gap: 1rem;
+
+                .textDiv{
+                    .singleInfo{
+                        p{
+                            max-width: 500px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .subscribe{
+        .sectionContainer{
+            max-width: 50%;
+        }
+    }
+}
+
+@media screen and (min-width:1440px){
+    .home{
+        .homeImages{
+            .plane{
+                width: 60%;
+                top: -100%;
+            }
+        }
+    }
 }
 
 
