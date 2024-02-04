@@ -71,7 +71,7 @@ const Search = () =>{
                             <input type="text" placeholder="Add date" />
                         </div>
                     </div>
-                    <button className="btn btnBlock flex">Search Flight</button>
+                    <button className="btn btnBlock flex" >Search Flight</button>
                 </div>
 
             </div>

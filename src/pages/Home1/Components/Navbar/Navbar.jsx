@@ -6,17 +6,24 @@ import { AiOutlineGlobal } from "react-icons/ai";
 import { CgMenuGridO } from "react-icons/cg";
 //images
 import logo from '../../../../assets/logo.png'
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () =>{
 
+    const navigate = useNavigate();
+
     const[active,setActive] = useState('navBarMenu')
+
     const showNavBar = ()=>{
         setActive('navBarMenu , showNavBar')
     }
+
     const removeNavBar = ()=>{
         setActive('navBarMenu')
     }
+
     const[noBg,addBg] = useState('navBarTwo')
+
     const addBgColor = ()=>{
         if(window.scrollY >= 10){
             addBg('navBarTwo navbar_with_Bg')
@@ -46,7 +53,7 @@ const Navbar = () =>{
             <div className={noBg}>
                 
                 <div className="logoDiv">
-                    <img src={logo} className="Logo" />
+                    <img src={logo} className="Logo"  onClick={() => navigate("/login")} />
                 </div>
                 <div className={active}>
                     <ul className="menu flex">
